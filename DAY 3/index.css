@@ -1,0 +1,19 @@
+#container-box
+{
+    display: flex;
+    width:320px;
+    height:200px;
+    border:2px;
+}
+.box
+{
+    width:25%;
+    height:auto;
+}
+.box.hover
+{
+    
+}
+img{
+
+}
