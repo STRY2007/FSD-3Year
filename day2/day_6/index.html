@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb Control</title>
+    <style>
+        #bulb {
+            border: 2px solid black;
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .btns {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="bulb"></div>
+
+    <div class="btns">
+        <input type="button" value="RED" onclick="colorhandler('red')">
+        <input type="button" value="YELLOW" onclick="colorhandler('yellow')">
+        <input type="button" value="GREEN" onclick="colorhandler('green')">
+        <input type="button" value="ORANGE" onclick="colorhandler('orange')">
+        <br><br>
+        <input type="button" value="ON" onclick="turnOn()">
+        <input type="button" value="OFF" onclick="turnOff()">
+    </div>
+
+    <script>
+        let currentColor = "";
+
+        function colorhandler(color) {
+            currentColor = color;
+            const bulb = document.getElementById("bulb");
+            bulb.style.backgroundColor = color;
+        }
+
+        function turnOn() {
+            const bulb = document.getElementById("bulb");
+            bulb.style.backgroundColor = currentColor || "yellow";
+        }
+
+        function turnOff() {
+            const bulb = document.getElementById("bulb");
+            bulb.style.backgroundColor = "white";
+        }
+    </script>
+</body>
+</html>
