@@ -1,16 +1,17 @@
 #container-box
 {
-    display: grid;
+    display:flex;
     grid-template-rows: repeat(2,1fr);
-  
+    width: 640px;
     grid-template-columns: repeat(3,1fr);
-   
+   height: 200px;
     border:2px solid grey;
     height: 300px;
     gap: 2px;
 }
 .box{
     border: 2px solid  rgb(61,60,60)
+    
 }
 .box:nth-child(1),
 .box:nth-child(2),
