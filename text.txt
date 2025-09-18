@@ -1,0 +1,2 @@
+Temporal dead zone
+temporal dead zone (TDZ) in JavaScript is the period within a scope where a let or const variable, though hoisted, cannot be accessed until it is initialized with a value.
