@@ -1,0 +1,3 @@
+-using node 
+ Strict Mode (component)
+  
