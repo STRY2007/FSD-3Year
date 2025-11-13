@@ -1,0 +1,46 @@
+:root{
+  --accent:#ff9900;
+  --muted:#6b6b6b;
+  --bg:#f6f6f6;
+}
+*{box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;margin:0;background:var(--bg);color:#111}
+.topbar{display:flex;align-items:center;gap:20px;padding:12px 20px;background:#fff;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+.logo{font-weight:700;color:var(--accent);font-size:1.4rem}
+.search{flex:1;display:flex;gap:6px}
+.search input{flex:1;padding:10px;border:1px solid #ddd;border-radius:4px}
+.search button{padding:10px 14px;border:none;background:var(--accent);color:#fff;border-radius:4px;cursor:pointer}
+.actions{display:flex;gap:10px;align-items:center}
+.link{background:transparent;border:none;cursor:pointer;color:var(--muted)}
+.cart{background:#222;color:#fff;border:none;padding:8px 10px;border-radius:4px;cursor:pointer}
+
+.categories{background:#fff;padding:8px 20px;border-top:1px solid #eee;border-bottom:1px solid #eee}
+.categories ul{display:flex;gap:14px;list-style:none;margin:0;padding:0}
+.categories a{text-decoration:none;color:#333;font-size:.95rem}
+
+.container{max-width:1100px;margin:20px auto;padding:0 16px}
+.hero{display:flex;gap:20px;align-items:center;background:#fff;padding:18px;border-radius:6px;overflow:hidden}
+.hero img{width:40%;height:160px;object-fit:cover;border-radius:6px}
+.hero-text{flex:1}
+.hero-text h1{margin:0 0 6px;font-size:1.6rem}
+.hero-text p{margin:0 0 12px;color:var(--muted)}
+.cta{display:inline-block;padding:8px 12px;background:var(--accent);color:#fff;border-radius:4px;text-decoration:none}
+
+h2{margin:18px 0 10px;font-size:1.2rem}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.card{background:#fff;padding:12px;border-radius:6px;box-shadow:0 1px 6px rgba(0,0,0,.05);display:flex;flex-direction:column;align-items:center;text-align:center}
+.card img{width:100%;height:140px;object-fit:cover;border-radius:4px;margin-bottom:10px}
+.card h3{margin:0 0 8px;font-size:1rem}
+.price{color:var(--accent);font-weight:700;margin-bottom:10px}
+.addBtn{padding:8px 12px;border:none;background:#0073e6;color:#fff;border-radius:4px;cursor:pointer}
+.addBtn:hover{transform:translateY(-2px);box-shadow:0 6px 14px rgba(0,0,0,.08)}
+
+.footer{text-align:center;padding:14px;color:var(--muted);margin-top:24px;background:transparent}
+
+/* responsive tweaks */
+@media (max-width:700px){
+  .hero{flex-direction:column}
+  .hero img{width:100%;height:180px}
+  .categories ul{overflow:auto}
+}

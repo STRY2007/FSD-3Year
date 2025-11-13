@@ -5,19 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Class Timetable</title>
   <style>
-    body { font-family: Arial, sans-serif; padding: 20px; background: #fafafa; }
+    body { font-family: Arial, sans-serif; padding: 20px; background: #cec7c7; }
     .timetable { width: 100%; max-width: 1000px; margin: 0 auto; border-collapse: collapse; }
     .timetable th, .timetable td { border: 1px solid #333; padding: 8px 10px; text-align: center; }
-    .timetable th { background: #222; color: #fff; }
+    .timetable th { background: #222; color: #763737; }
     .day { background: #f4f4f4; font-weight: 700; }
-    .lunch { background: #fff3cd; }
-    .timetable tbody tr:hover { background: #f0f8ff; }
+    .lunch { background: #958961; }
+    .timetable tbody tr:hover { background: #a5c8e6; }
     @media (max-width: 720px) {
       .timetable, .timetable thead, .timetable tbody, .timetable th, .timetable td, .timetable tr {
         display: block;
       }
       .timetable thead { display: none; }
-      .timetable tr { margin-bottom: 12px; border-bottom: 2px solid #eee; }
+      .timetable tr { margin-bottom: 12px; border-bottom: 2px solid #463838; }
       .timetable td { text-align: left; padding-left: 50%; position: relative; }
       .timetable td::before {
         content: attr(data-label);
